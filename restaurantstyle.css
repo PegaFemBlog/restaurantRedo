@@ -1,0 +1,181 @@
+/*Rebecca Baca
+	Date: 9/10/18
+	Last Modified: 9/22/18
+	Restaurant Site
+*/
+/*********************************************
+                Home page, headers, and footers
+**********************************************/
+#announcements {
+	width: auto;
+	height: auto;
+	margin: 10px;
+	border: silver solid 10px;
+	padding: 0;
+	float: both;
+}
+/*          DALLY'S LOGO      */
+#logo {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  text-decoration: none;
+  text-align: left;
+  text-shadow: 5px 5px 10px #a59891;
+  text-transform: uppercase;
+  font-size: 120px;
+  font-weight: 700;
+  letter-spacing: -3px;
+  line-height: 1;
+  position: relative;
+}
+/* TABLE SIZE */
+@media only screen and (max-width: 600px) {
+#logo {
+	font-size: 60px;
+}}
+/* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 300px) {
+#logo {
+	font-size: 30px;
+}}
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 480px) {
+#logo {
+	font-size: 40px;
+}}
+#homecontent {
+	background-color: 	rgba(211,211,211, .7);
+}
+#burger {
+	width: 80%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 8px solid dimgray;
+	border-radius: 8px;
+}
+#openingsoon {
+	text-align: right;
+	font-style: italic;
+}
+/*              RESTAURANT DESCRIPTION           */
+@media only screen and (max-width: 300px) {
+#restaurant {
+	color: rgb(237, 237, 220);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 15px;
+}}
+@media only screen and (max-width: 600px) {
+#restaurant {
+	color: rgb(237, 237, 220);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 30px;
+}}
+@media only screen and (min-width: 601px) {
+		#restaurant {
+			color: rgb(237, 237, 220);
+			text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+			font-family: 'Permanent Marker', cursive;
+			font-size: 60px;
+		}}
+footer {
+	border-top: 4px double #AAA;
+	background-color: rgb(237, 237, 220);
+	padding: 12px 12px 12px 0;
+	text-align: center;
+}
+body {
+  padding: 20px 70px;
+  background: grey;
+}
+/********************************************************
+						Navigation Menu Styling
+*********************************************************/
+#menu {
+	border-top: 4px double #AAA;
+	border-bottom: 4px double #AAA;
+  	padding: 10px;	
+}
+#menu button {
+  color:   #555;
+ }
+#menu button:visited {
+	color: #d1bd6e;
+}
+#menu button:hover {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+/*****************************************		
+							Article 
+******************************************/
+#content {
+	max-width: 80%;
+	text-align: left;
+	height: auto;
+	margin: auto;
+	padding: 5%;
+}
+/*****************************************		
+						Table Styling
+******************************************/
+#contact {
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 0;
+}
+table {
+    font-family: "Open Sans", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+	text-align: center;
+}
+table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:hover {background-color: #ddd;}
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+	font-weight: bold;
+	font-size: 22px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+}
+.beverages {
+	text-align: left;
+}
+/*****************************************		
+					Form Styling
+******************************************/
+form {
+	width: auto;
+	height: auto;
+	text-align: left;
+	display: inline;
+}
+label {
+	display: inline-block;
+	text-align: left;
+	font-weight: bold;
+	float: left;
+	margin-right: 12px;
+}
+#info {
+	width: 40%;
+	float: left;
+	padding: 0;
+}
