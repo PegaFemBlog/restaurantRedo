@@ -7,11 +7,10 @@
 #carousel {
 	width: auto;
 	height: auto;
-	margin: 10px;
+	margin: 0;
 	border: silver solid 10px;
 	border-radius: 3px;
 	padding: 0;
-	margin: 0;
 	border-collapse: collapse; 
 	float: both;
 }
@@ -113,13 +112,13 @@ body {
 #nav button {
   color:   #555;
  }
-#nav button:visited {
-	color: #d1bd6e;
-}
 #nav button:hover {
   color: white;
   font-weight: bold;
   text-decoration: none;
+}
+#nav button:visited {
+	color: #d1bd6e;
 }
 /*****************************************		
 							Article 
@@ -131,15 +130,15 @@ body {
 	margin: auto;
 	padding: 5%;
 }
-/*****************************************		
-						Table Styling
-******************************************/
 #contact {
 	max-width: 100%;
 	height: auto;
 	margin: auto;
 	padding: 0;
 }
+/*****************************************		
+						Table Styling
+******************************************/
 table {
     font-family: "Open Sans", sans-serif;
     border-collapse: collapse;
@@ -154,19 +153,27 @@ table td, table th {
 	text-align: center;
 }
 table tr:nth-child(even){background-color: #f2f2f2;}
-table tr:hover {background-color: #ddd;}
+table tr:hover {background-color: white; color: #d1bd6e; font-weight: bold;}
 table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 20px;
     text-align: center;
     background-color: #555;
     color: white;
 }
 .beverages {
-	text-align: left;
+	text-align: center;
 }
+@media only screen and (max-width: 300px) {
+table th{
+	font-size: 10px;
+}}
+@media only screen and (max-width: 600px) {
+table th {
+	font-size: 15px;
+}}
 /*****************************************		
 					Form Styling
 ******************************************/
@@ -187,4 +194,7 @@ label {
 	width: 40%;
 	float: left;
 	padding: 0;
+}
+#submitButton {
+	margin-left: 30%;
 }
