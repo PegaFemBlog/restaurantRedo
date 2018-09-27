@@ -15,40 +15,41 @@ Most recent revision: 9/26/18-->
    alert("Welcome, this site functions best with JavaScipt enabled. Your JavaScript is on!");</script>
   <noscript>Oops - Your browser does not support JavaScript! For full functionality of this webpage, please enable JavaScript in your browser settings.</noscript>
 </head>
-<body>
+<body >
 <div class="container">
 <!---------------- JUMBOTRON --------------------->
 	<div class="row" >
-		<div class="col jumbotron">
+		<div class="col jumbotron" id="jumbotron">
 			<h2>New Location Opening Soon!</h2>
 		</div>
 	</div>
 <!---------------- LOGO/HEADER --------------------->
-<div class="row" style="background-color: pink;">
+<div class="row" id="logo">
 		<div class="col header">
 				<header class="header">Dally's</header>
 		</div>
 	</div>
 <!---------------- NAV MENU --------------------->
-<div class="row" style="background-color: wheat;">
-	   		<div class="col-sm-4 nav">
-				<a href="index.html" class="navbar-brand"><button type="button" class="btn btn-outline-secondary navbar-toggler">Home</button></a>
+<div class="row" id="nav">
+			<div class="col-sm-2"></div>
+	   		<div class="col-sm-3 nav">
+				<a href="index.html" class="navbar-brand navlinks" ><button type="button" class="btn btn-outline-secondary navbar-toggler">Home</button></a>
 			</div>
-			<div class="col-sm-4 nav">
-				<a href="menu.html" class="navbar-brand"><button type="button" class="btn btn-outline-secondary navbar-toggler">Menu</button></a>
+			<div class="col-sm-3 nav">
+				<a href="menu.html" class="navbar-brand navlinks"><button type="button" class="btn btn-outline-secondary navbar-toggler">Menu</button></a>
 			</div>
-		<div class="col-sm-4 nav">
-				<a href="contact.html" class="navbar-brand"><button type="button" class="btn btn-outline-secondary navbar-toggler">Contact</button></a>
+		<div class="col-sm-3 nav">
+				<a href="contact.html" class="navbar-brand navlinks"><button type="button" class="btn btn-outline-secondary navbar-toggler">Contact</button></a>
 			</div>
+			<div class="col-sm-2"></div>
 	</div>
 <!----------------MIDDLE OF PAGE/CONTENT --------------------->
 <!---------------------------------Image Carousel ROW!------------------------>
 <div class="row">
-		<div class="col sm-2">
-		  left side
+		<div class="col sm-2 colorMe">
 		</div>		 
 		<!------------------Start Image Carousel-------------------->
-			<div class="col-sm-8 carousel slide"  style="background-color: lightgrey;" data-ride="carousel">
+			<div class="col-sm-8 carousel slide colorMe" id="carousel"  data-ride="carousel">
 			  <div class="carousel-inner">
 				    <div class="carousel-item active">
 				      <img class="d-block w-100" src="images/newlocate.jpg" alt="First slide">
@@ -62,39 +63,34 @@ Most recent revision: 9/26/18-->
 				</div>
  		</div>
 	<!------------------End Image Carousel------------------->
-		<div class="col-sm-2">
-			  right side
-			</div>
+		<div class="col-sm-2 colorMe">
+		</div>
 </div>
 <!---------------------------------Restaurant Image ------------------------>
 <div class="row">
-		<div class="col-sm-2">
-		  left side
+		<div class="col-sm-2 colorMe">
 		</div>
-				<div class="col-sm-8" style="background-color: lightgrey;">
+				<div class="col-sm-8 colorMe">
 				  <img id="burger"  src="images/burgers.png" alt="burger and a brew" width="200px" height="200px">
 				</div>
-		<div class="col-sm-2">
-		  right side
+		<div class="col-sm-2 colorMe">
 		</div>
 	</div>
 <!---------------------------------Restaurant Desicription ------------------------>
 <div class="row">
-		<div class="col-sm-2">
-		  left side
+		<div class="col-sm-2 colorMe">
 		</div>
-				<div class="col-sm-8" style="background-color: lightgrey;">
+				<div class="col-sm-8 colorMe">
 				<h2 id="restaurant">Restaurant Description</h2>
 				<p>Distillery locavore bicycle rights enamel pin squid. Pour-over est knausgaard freegan enamel pin. Pinterest cronut gluten-free, drinking vinegar aliquip salvia tempor duis occaecat narwhal laborum deep v intelligentsia art party. Vaporware pok pok irony mixtape austin tousled lomo occupy, lorem enim irure poke pabst wolf tacos pinterest activated charcoal brooklyn DIY quinoa iPhone dolore duis farm-to-table pop-up cloud bread narwhal enim craft beer ugh. Health goth echo park organic, umami taiyaki man bun veniam magna. Actually wolf ex, culpa mixtape selfies 8-bit taiyaki ugh shabby chic artisan cillum raw denim hell of schlitz. Vinyl echo park minim aliquip consectetur vegan ad raw denim.</p>
 		
 				</div>
-		<div class="col-sm-2">
-		  right side
+		<div class="col-sm-2 colorMe">
 		</div>
 	</div>
 <!---------------- footer --------------------->
-<div class="row" style="background-color: green;">
-		<div class="col footer">
+<div class="row">
+		<div class="col" id="footer">
 		 <p>123 Main Street, Dallas, TX 75287</p>
 		<p>(214) 788-8970</p>
 		<p>&copy; 2018 Rebecca Baca. All rights reserved.</p>

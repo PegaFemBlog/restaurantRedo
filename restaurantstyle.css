@@ -1,20 +1,21 @@
 /*Rebecca Baca
 	Date: 9/10/18
-	Last Modified: 9/22/18
+	Last Modified: 9/26/18
 	Restaurant Site
 */
-/*********************************************
-                Home page, headers, and footers
-**********************************************/
-#announcements {
+/*****************IMAGE CAROUSEL**********************/
+#carousel {
 	width: auto;
 	height: auto;
 	margin: 10px;
 	border: silver solid 10px;
+	border-radius: 3px;
 	padding: 0;
+	margin: 0;
+	border-collapse: collapse; 
 	float: both;
 }
-/*          DALLY'S LOGO      */
+/******************** DALLY'S LOGO**********************/
 #logo {
   font-family: 'Open Sans', sans-serif;
   color: #555;
@@ -26,6 +27,7 @@
   font-weight: 700;
   letter-spacing: -3px;
   line-height: 1;
+  background-color: rgb(237, 237, 220);
   position: relative;
 }
 /* TABLE SIZE */
@@ -43,25 +45,7 @@
 #logo {
 	font-size: 40px;
 }}
-#homecontent {
-	background-color: 	rgba(211,211,211, .7);
-}
-#burger {
-	width: 80%;
-	height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	border: 8px solid dimgray;
-	border-radius: 8px;
-}
-#openingsoon {
-	text-align: right;
-	font-style: italic;
-}
-/*              RESTAURANT DESCRIPTION           */
+/********************* RESTAURANT DESCRIPTION ***********/
 @media only screen and (max-width: 300px) {
 #restaurant {
 	color: rgb(237, 237, 220);
@@ -74,7 +58,7 @@
 	color: rgb(237, 237, 220);
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-family: 'Permanent Marker', cursive;
-	font-size: 30px;
+	font-size: 25px;
 }}
 @media only screen and (min-width: 601px) {
 		#restaurant {
@@ -83,7 +67,28 @@
 			font-family: 'Permanent Marker', cursive;
 			font-size: 60px;
 		}}
-footer {
+/****************End of Restaurant Description***************/
+#jumbotron {
+	text-align: right;
+	font-style: italic;
+}
+#burger {
+	width: 80%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 8px solid dimgray;
+	border-radius: 8px;
+}
+#nav {
+	border-top: 4px double #AAA;
+	border-bottom: 4px double #AAA;
+	text-align: center;
+}
+#footer {
 	border-top: 4px double #AAA;
 	background-color: rgb(237, 237, 220);
 	padding: 12px 12px 12px 0;
@@ -93,6 +98,10 @@ body {
   padding: 20px 70px;
   background: grey;
 }
+.colorMe {
+	background-color: rgba(170, 168, 160, .3);
+}
+
 /********************************************************
 						Navigation Menu Styling
 *********************************************************/
@@ -101,13 +110,13 @@ body {
 	border-bottom: 4px double #AAA;
   	padding: 10px;	
 }
-#menu button {
+#nav button {
   color:   #555;
  }
-#menu button:visited {
+#nav button:visited {
 	color: #d1bd6e;
 }
-#menu button:hover {
+#nav button:hover {
   color: white;
   font-weight: bold;
   text-decoration: none;
