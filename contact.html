@@ -62,11 +62,11 @@ Most recent revision: 9.26.18 -->
 		</div>
 	<!--------------------- TEXT BOX AREA ---------------------->
 	<div class="form-group">
-		<fieldset>
+		
 		<label for="info">Additional Information:</label>
-			<textarea type="text" id="comment" name="info" class="form-control">
+			<textarea type="text" id="textarea" name="info" class="form-control">
 			</textarea>
-		</fieldset>
+		
 	</div>
 	<!--------------------- RADIO BUTTONS ---------------------->
 	<div class="form-group">
@@ -107,16 +107,38 @@ Most recent revision: 9.26.18 -->
 	</fieldset>
 	<br >
 <!-------------------- SUBMIT BUTTON ------------------------------->
-	<button type="submit"  class="submit" name="submit" onclick="myFormValid()">Send Request</button>
+	<button type="submit"  class="submit" name="submit" onclick="myFormValid()" id="submitButton">Send Request</button>
 	<p id="demo"></</p>
 	</div>
+	<div class="col-sm-2 colorMe"></div>
 	</form>
 </div>
+<!----------------- JAVASCRIPT FUNCTION TO VALIDATE FORM DATA ------------------>
+<script>
+		function myFormValid() {
+		//name required
+		    var x = document.getElementById("name");
+		    if (!x.checkValidity()) {
+		      alert("Name must be filled out");
+			return false;
+		    } 
+		//email required
+			var y = document.getElementById("email");
+			if (!y.checkValidity()) {
+		        alert("Valid email is required");
+ 			return false;
+  			}
+		//Form accepted alert
+			else {
+			document.getElementById("demo").innerHTML = alert("Your information has been received. Thank you.");
+			}
+		}
+</script>
 <!---------------- FOOTER  --------------------->
 <div class="row">
 		<div class="col" id="footer">
 		 <p>123 Main Street, Dallas, TX 75287</p>
-		<p>(214) 788-8970</p>
+		<p>(214) EAT-GOOD</p>
 		<p>&copy; 2018 Rebecca Baca. All rights reserved.</p>
 		</div>
 	</div>

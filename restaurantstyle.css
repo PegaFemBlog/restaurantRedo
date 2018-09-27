@@ -64,12 +64,21 @@
 			text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 			font-family: 'Permanent Marker', cursive;
 			font-size: 60px;
+			padding-top: 20px;
+			padding-bottom: 20px;
 		}}
 /****************End of Restaurant Description***************/
 #jumbotron {
 	text-align: right;
 	font-style: italic;
+	font-size: 30%;
+	color: #d1bd6e;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+/****************  Jumbotron Animation ***************/
+#jumbotron { transition: all .2s ease-in-out; }
+#jumbotron:hover { transform: scale(1.2); }
+/**************** End Jumbotron Animation ***************/
 #burger {
 	width: 80%;
 	height: auto;
@@ -78,7 +87,7 @@
 	margin-right: auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	border: 8px solid dimgray;
+	border: 6px solid dimgray;
 	border-radius: 8px;
 }
 /**************** Main Page Burger Image Animation ***************/
@@ -114,6 +123,8 @@ body {
 	border-top: 4px double #AAA;
 	border-bottom: 4px double #AAA;
   	padding: 10px;	
+	text-align: center;
+	
 }
 #nav button {
   color:   #555;
@@ -188,6 +199,7 @@ table th {
 form {
 	width: auto;
 	height: auto;
+	padding: 25px;;
 	text-align: left;
 	display: inline;
 }
@@ -203,6 +215,25 @@ label {
 	float: left;
 	padding: 0;
 }
+select  {
+	border: 1px solid #53687E;
+}
+input  {
+	border: 1px solid #53687E;
+}
+#textarea {
+	width: 250px;
+	height: auto;
+	
+}
 #submitButton {
 	margin-left: 30%;
+	border-radius: 1px;
+}
+#submitButton:hover {
+	margin-left: 30%;
+	background-color: white;
+	color: #555;
+	font-weight: bold;
+	border-radius: 1px;
 }
